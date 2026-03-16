@@ -100,3 +100,35 @@ h2 {
 #drop-btn {
     grid-column: 1 / 4;
 }
+
+#sound-controls {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+#mute-btn, #music-btn {
+    background: linear-gradient(145deg, #3a3a3a, #1a1a1a);
+    color: #f0f0f0;
+    border: none;
+    padding: 15px 30px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #3a3a3a;
+    transition: all 0.2s ease-in-out;
+}
+
+#mute-btn:hover, #music-btn:hover {
+    background: linear-gradient(145deg, #1a1a1a, #3a3a3a);
+    box-shadow: 2px 2px 5px #1a1a1a, -2px -2px 5px #3a3a3a;
+}
+
+#mute-btn:active, #music-btn:active {
+    transform: translateY(2px);
+}
+
+#music-btn.disabled {
+    opacity: 0.5;
+    filter: grayscale(50%);
+}

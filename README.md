@@ -9,6 +9,8 @@ A classic Tetris game built with HTML5 Canvas, CSS3, and vanilla JavaScript.
 
 - 🎮 **Classic Gameplay**: All 7 tetromino shapes with authentic mechanics
 - 🎨 **Modern Design**: Dark theme with gradient UI and smooth animations
+- 🔊 **Sound Effects**: Retro arcade sounds for all game actions
+- 🎵 **Background Music**: Iconic Tetris theme (Korobeiniki) looping soundtrack
 - 📊 **Score System**: Track score, lines cleared, and current level
 - 👀 **Next Piece Preview**: See the upcoming piece to plan your moves
 - 📱 **Mobile Friendly**: On-screen touch controls for mobile devices
@@ -40,8 +42,29 @@ Arrange falling tetromino blocks to create complete horizontal lines. Completed 
 - **▶** - Start game
 - **⏸** - Pause game
 - **⏹** - Stop/Reset game
+- **🔊/🔇** - Mute/Unmute sound effects
+- **🎵** - Toggle background music (on/off)
 
 ### Game Mechanics
+
+#### Sound Effects
+| Event | Sound |
+|-------|-------|
+| Move Left/Right | Short beep |
+| Rotate | Higher pitch beep |
+| Hard Drop | Low thud |
+| Line Clear | Pleasant chime (multi-note for multiple lines) |
+| Level Up | Ascending arpeggio |
+| Game Over | Descending tone sequence |
+| Start Game | Victory fanfare |
+| Pause | Confirmation beep |
+
+#### Background Music
+- **Tetris Theme (Korobeiniki)**: Classic Russian folk melody
+- Automatically starts when you begin the game
+- Pauses when the game is paused
+- Toggle on/off with the 🎵 button
+- Controlled independently from sound effects
 
 #### Scoring
 - **Line Clear**: 100 × current level points per line
